@@ -1,0 +1,29 @@
+"streetr": {
+  "themes" : [
+    {
+      "name" : "Street art",
+      "id"    : "street-art",
+      "material_icon" : "create",
+      "paths" : [
+        {
+          "name": "Path name",
+          "description": "desc",
+          "theme_id"  : "theme_id",
+          "link"      : "gmail_link",
+          "steps" : [
+            {
+              "title"   : "A thing to see",
+              "address": "Address 1",
+              "comment": "where it is ? What it is ?"
+            },
+            {
+              "title"   : "A second thing to see",
+              "address": "Address 2",
+              "comment": "comment 2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
