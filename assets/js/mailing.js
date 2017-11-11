@@ -11,13 +11,11 @@ function sendPath(){
     };
 
     function path_send_success(data){
-        data = JSON.parse(data);
         var color = data.success ? "green" : "red";
         Materialize.toast(data.message, 4000,  color);
         $('.progress').remove();
     }
     function path_send_error(data){
-        data = JSON.parse(data);
 
         Materialize.toast(data.message);
         $('.progress').remove();
