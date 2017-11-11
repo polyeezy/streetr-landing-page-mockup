@@ -2,6 +2,8 @@
 var PATHS_DIRECTORY = 'assets/Paths/';
 var THEME_ID = 'street-art';
 
+
+
 createPath('1', true);
 createPath('1', false);
 
@@ -43,7 +45,6 @@ function createPath(path_id, active){
 
 
         $('.' + THEME_ID).append(path);
-        console.log(getPathScreenshots(path_id));
     });
 
 
