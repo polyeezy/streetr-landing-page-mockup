@@ -91,10 +91,8 @@ function update_sliders(id){
                         '    <img src="'+getPathPreview(id)+'"> <!-- random image -->'+
                         '    <div class="caption center-align card">'+
                         '        <h3 class="black-text">À vous de jouer!</h3>'+
-                        '    <p>       <a class="waves-effect waves-light blue btn-large">'+
-                        '        <i class="material-icons right">send</i>'+
-                        '    Envoyer ce trajet sur mon téléphone'+
-                        '    </a></p>'+
+                        '    <p>                   <button onclick="sendPath()" id="btn_send_path" class="waves-effect waves-light red btn"><i class="material-icons right">send</i>Envoyer</button>
+                        </p>'+
                         '    </div>'+
                         '    </li>    </ul>\n' +
                         '        </div>';
