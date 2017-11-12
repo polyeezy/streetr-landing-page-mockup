@@ -10,12 +10,12 @@ function sendPath(){
     };
 
 
-    var host = "http://www.streetr.eu";
     //var host = "http://www.streetr.eu";
+    var host = "http://localhost:8888/streetr-landing-page-mockup/";
 
     $.ajax({
         type: "POST",
-        url: host + '/sendPathByMail.php',
+        url: 'sendPathByMail.php',
         data: data,
         dataType: 'json',
         crossDomain: true,
@@ -40,7 +40,7 @@ function path_send_success(data){
 }
 function path_send_error(data){
     //data = JSON.parse(data);
-
+    console.log(data);
     Materialize.toast(data.message);
     $('.progress').remove();
 }
