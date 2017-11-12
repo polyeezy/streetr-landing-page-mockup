@@ -1,12 +1,13 @@
 <?php
+header('Content-Type: application/json');
 
 $invalid_mail = '{"success": false, "message" : "Email invalide."}';
 $invalid_link = '{"success": true, "message" : "Erreur. Veuillez réessayer."}';
-
 $mail = "";
 
 if (!isset($_POST['mail']) || ( isset($_POST['mail']) && empty($_POST['mail']) ) ) {
-    print_r($invalid_mail);
+
+    echo json_encode($invalid_mail);
     return;
 }
 
@@ -39,6 +40,5 @@ $err = curl_error($curl);
 
 curl_close($curl);
 
-print_r($success);
-return;
+echo json_encode($invalid_mail);return;
 ?>
