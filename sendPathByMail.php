@@ -39,6 +39,7 @@ $response = curl_exec($curl);
 $err = curl_error($curl);
 
 curl_close($curl);
+
 echo json_encode(array("status"=>200, "success"=>true, "message"=>"Trajet envoyé", "link"=>$link));
 
 return;
