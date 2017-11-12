@@ -199,10 +199,12 @@
 <div id="modal1" class="modal">
     <div class="modal-content">
         <h4>Recuperer le parcours</h4>
-        <p>Afin de pouvoir exploiter ce trajet, Streetr vous propose de vous envoyer ce trajet Google Maps, par mail.</p>
+        <p>Afin de pouvoir exploiter ce trajet, la communauté Streetr à mis à disposition un lien Google Maps.
+            Veuillez renseigner votre adresse mail pour récuperer ce lien.
+        </p>
         <div class="input-field s12">
             <input id="email" type="email" class="validate">
-            <label for="email" data-error="wrong" data-success="right">Votre email</label>
+            <label id="email_label"for="email" data-error="wrong" data-success="right">Votre email</label>
             <div class="modal-send"></div>
             <button onclick="sendPath()" id="btn_send_path" class="waves-effect waves-light red btn"><i class="material-icons right">send</i>Envoyer</button>
 
@@ -219,10 +221,9 @@
 
 
 
-<script type="text/javascript" src="assets/js/mailing.js"></script>
 <script type="text/javascript" src="assets/js/materialize.min.js"></script>
-
 <script type="text/javascript" src="assets/js/streetr.js"></script>
+<script type="text/javascript" src="assets/js/mailing.js"></script>
 
 <script>  var currentPath = {};
 

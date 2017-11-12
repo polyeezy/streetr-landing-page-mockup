@@ -2,7 +2,6 @@
 
 $invalid_mail = '{"success": false, "message" : "Email invalide."}';
 $invalid_link = '{"success": true, "message" : "Erreur. Veuillez réessayer."}';
-$success = '{"success": true, "message" : "Trajet envoyé!"}';
 
 $mail = "";
 
@@ -11,10 +10,9 @@ if (!isset($_POST['mail']) || ( isset($_POST['mail']) && empty($_POST['mail']) )
     return;
 }
 
-if (!isset($_POST['link'])){
-    print_r($invalid_link);
-    return;
-}
+$link = "test";
+
+$success = '{"success": true, "message" : "Trajet envoyé!", "link": "'.$link.'"}';
 
 
 $curl = curl_init();

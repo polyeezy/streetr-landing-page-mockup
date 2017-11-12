@@ -30,7 +30,6 @@ function getPathPreview(path_id){
 function createPath(path_id, active) {
     active = active || false;
 
-
     $.getJSON(getPathData(path_id))
         .then(function (data) {
             data.paths.forEach(function(elem, index ){
@@ -43,9 +42,8 @@ function createPath(path_id, active) {
             });
         })
         .fail(function () {
+
         });
-
-
 }
 
 function active_path(id){
@@ -64,6 +62,7 @@ function update_sliders(id){
                 index += 1;
 
                 var screens = getPathScreenshots(id);
+
                 if (index == id){
                     path = elem.steps;
 
@@ -76,13 +75,11 @@ function update_sliders(id){
                             '    <img src="'+ screens[idx]+'"> <!-- random image -->'+
                             '    <div class="caption center-align card">'+
                             '        <h3 class="black-text">'+step.name+'</h3>'+
+                            '        <h5 class="black-text">'+step.comment+'</h5>'+
+
                             '    </div>'+
                             '    </li>';
                     });
-
-
-
-
                     myvar +=
                         '    <li class="streetr-slide">'+
                         '    <img src="'+getPathPreview(id)+'"> <!-- random image -->'+
@@ -105,9 +102,6 @@ function update_sliders(id){
         })
         .fail(function () {
         });
-
-
-
 }
 
 function addPathToTheme(theme_title, path_title, creator_name)
