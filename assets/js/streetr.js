@@ -32,9 +32,6 @@ function createPath(path_id, active) {
 
     $.getJSON(getPathData(path_id))
         .then(function (data) {
-
-            console.log(data);
-
             data.paths.forEach(function(elem, index ){
                 index += 1;
                 var path = index == 1 ? '<a onclick="active_path('+index+')" id="' + index + '" href="#!" class="path collection-item avatar active">' : '<a onclick="active_path('+index+')" id="' + (index) + '" href="#!" class="path collection-item avatar">';
@@ -45,7 +42,6 @@ function createPath(path_id, active) {
             });
         })
         .fail(function () {
-            console.log('error')
         });
 
 
@@ -59,45 +55,57 @@ function active_path(id){
 
 function update_sliders(id){
     $('.slider').remove();
+    var path = {};
 
-    var screens = getPathScreenshots(id);
+    $.getJSON(getPathData(1))
+        .then(function (data) {
+            data.paths.forEach(function(elem, index ){
+                index += 1;
 
-    var myvar = '   <div class="slider">\n' +
-        '            <ul class="slides"><li class="streetr-slide">'+
-        '    <img src="'+ screens.screenshot1+'"> <!-- random image -->'+
-        '    <div class="caption center-align card">'+
-        '        <h3 class="black-text">Illustration vieil homme sur facade</h3>'+
-        '    <h5 class="light blue-text white">On remarque sur la facade d\'un mur à gauche le portrait d\'un vieil homme.</h5>'+
-        '    </div>'+
-        '    </li>'+
-        '    <li class="streetr-slide">'+
-        '    <img src="'+ screens.screenshot2 +'"> <!-- random image -->'+
-        '    <div class="caption center-align card">'+
-        '        <h3 class="black-text">illustration oiseau facade</h3>'+
-        '    <h5 class="light blue-text white">Si vous êtes placé vers le parking de taxis, en faisant face au rond point, vous remarquerez l\'illustration d\'un oiseau sur la facade en fond.</h5>'+
-        '    </div>'+
-        '    </li>'+
-        '    <li class="streetr-slide">'+
-        '    <img src="'+ screens.screenshot3+'"> <!-- random image -->'+
-        '    <div class="caption center-align card">'+
-        '        <h3 class="black-text">Free wall</h3>'+
-        '    <h5 class="light blue-text white">Aprés avoir déscendu la première session d\'escaliers, sur votre gauche, sous l\'arc, se trouve un mur dédié au graffiti.</h5>'+
-        '    </div>'+
-        '    </li>'+
-        '    <li class="streetr-slide">'+
-        '    <img src="assets/Paths/street-art/street-art_1/preview.png"> <!-- random image -->'+
-        '    <div class="caption center-align card">'+
-        '        <h3 class="black-text">À vous de jouer!</h3>'+
-        '    <p>       <a class="waves-effect waves-light blue btn-large">'+
-        '        <i class="material-icons right">send</i>'+
-        '    Envoyer ce trajet sur mon téléphone'+
-        '    </a></p>'+
-        '    </div>'+
-        '    </li>    </ul>\n' +
-        '        </div>';
+                var screens = getPathScreenshots(id);
+                if (index == id){
+                    path = elem.steps;
 
-    $('.theme_container').append(myvar);
-    $('.slider').slider();
+                    var myvar = '   <div class="slider">\n' +
+                        '            <ul class="slides">';
+
+
+                    elem.steps.forEach(function (step){
+                        myvar +=  '<li class="streetr-slide">'+
+                            '    <img src="'+ screens.screenshot1+'"> <!-- random image -->'+
+                            '    <div class="caption center-align card">'+
+                            '        <h3 class="black-text">'+step.name+'</h3>'+
+                            '    </div>'+
+                            '    </li>';
+                    });
+
+
+
+
+                    myvar +=
+                        '    <li class="streetr-slide">'+
+                        '    <img src="'+getPathPreview(id)+'"> <!-- random image -->'+
+                        '    <div class="caption center-align card">'+
+                        '        <h3 class="black-text">À vous de jouer!</h3>'+
+                        '    <p>       <a class="waves-effect waves-light blue btn-large">'+
+                        '        <i class="material-icons right">send</i>'+
+                        '    Envoyer ce trajet sur mon téléphone'+
+                        '    </a></p>'+
+                        '    </div>'+
+                        '    </li>    </ul>\n' +
+                        '        </div>';
+
+                    $('.theme_container').append(myvar);
+                    $('.slider').slider();
+
+
+                }
+            });
+        })
+        .fail(function () {
+        });
+
+
 
 }
 
