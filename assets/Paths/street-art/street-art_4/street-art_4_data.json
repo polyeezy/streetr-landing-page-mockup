@@ -1,0 +1,23 @@
+{
+  "name": "Une promenade haute en couleurs",
+  "description": "Une sélection de graffitis à Bruxelles",
+  "theme_id"  : "street-art",
+  "link"      : "https://www.google.be/maps/dir/50.841594,4.3479004/50.8432419,4.3480825/50.844267,4.3436369/@50.8430219,4.3456476,17.75z/data=!4m2!4m1!3e2",
+  "steps": [
+    {
+      "address": "Rue des Ursulines",
+      "name": "Multiple artists",
+      "comment": "Plusieurs artistes se sont relayées pour égayer l'endroit"
+    },
+    {
+      "address": "Rue Philippe de Champagne",
+      "name": "ABOVE",
+      "comment": "Magnifique facade"
+    },
+    {
+      "address": "Rue de la Verdure 13",
+      "name": "DEFO 84 & SHAKE",
+      "comment": "Superbe graph !"
+    }
+  ]
+}

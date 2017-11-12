@@ -25,7 +25,10 @@ function getPathScreenshots(path_id){
 function getPathLink(){
     return[
         'https://goo.gl/3AHCwq',
-        'https://goo.gl/dAK5ad'
+        'https://goo.gl/dAK5ad',
+        'https://goo.gl/Z2RcRJ',
+        'https://goo.gl/yNhNJt'
+
     ]
 }
 
@@ -71,7 +74,7 @@ function update_sliders(id){
 
                 if (index == id){
                     path = elem.steps;
-
+                    currentIdx = index - 1;
                     var myvar = '   <div class="slider">\n' +
                         '            <ul class="slides">';
 
@@ -91,8 +94,7 @@ function update_sliders(id){
                         '    <img src="'+getPathPreview(id)+'"> <!-- random image -->'+
                         '    <div class="caption center-align card">'+
                         '        <h3 class="black-text">À vous de jouer!</h3>'+
-                        '    <p>                   <button onclick="sendPath()" id="btn_send_path" class="waves-effect waves-light red btn"><i class="material-icons right">send</i>Envoyer</button>
-                        </p>'+
+                        '    <p>                   <button onclick="sendPath()" id="btn_send_path" class="waves-effect waves-light red btn"><i class="material-icons right">send</i>Envoyer</button> </p>'+
                         '    </div>'+
                         '    </li>    </ul>\n' +
                         '        </div>';

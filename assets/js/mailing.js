@@ -2,11 +2,13 @@ function sendPath(){
     $('.modal-send').append('<div class="progress"><div class="indeterminate"></div></div>');
 
 
+    console.log(currentIdx);
+
     var email = $('#email').val();
 
     var data = {
         "mail" : email,
-        "link" : currentLink
+        "link" : getPathLink()[currentIdx]
     };
 
 

@@ -12,14 +12,14 @@
           "comment": "Une centaine de metres aprés sur la gauche, on remarque sur la facade d'un mur le portrait d'un vieil homme."
         },
         {
-          "address": "Mont des arts, Bruxelles",
-          "name": "Free wall",
-          "comment": "Aprés avoir déscendu la première session d'escaliers, sur votre gauche, sous l'arc, se trouve un mur dédié au graffiti."
-        },
-        {
           "address": "Chaussée d'ixelles, Bruxelles",
           "name": "illustration oiseau facade",
           "comment": "Si vous êtes placé vers le parking de taxis, en faisant face au rond point, vous remarquerez l'illustration d'un oiseau sur la facade en fond."
+        },
+        {
+          "address": "Mont des arts, Bruxelles",
+          "name": "Free wall",
+          "comment": "Aprés avoir déscendu la première session d'escaliers, sur votre gauche, sous l'arc, se trouve un mur dédié au graffiti."
         }
       ]
     },
@@ -43,6 +43,52 @@
           "address": "Boulevard Simon Bolivar, Bruxelles",
           "name": "SAINER, La maternité",
           "comment": ""
+        }
+      ]
+    },
+    {
+      "name": "Une promenade haute en couleurs",
+      "description": "Une sélection de graffitis à Bruxelles",
+      "theme_id"  : "street-art",
+      "link"      : "https://www.google.be/maps/dir/50.8373102,4.3455618/50.8391531,4.3488449/50.8419851,4.3481153/@50.8401795,4.3470424,17z/data=!4m2!4m1!3e2",
+      "steps": [
+        {
+          "address": "Place du Jeu de Balle 15",
+          "name": "Mr Chat",
+          "comment": "Un joli chat vous sourit sur la facade du magasin devant vous !"
+        },
+        {
+          "address": "Rue Blaes 87",
+          "name": "BONOM",
+          "comment": "Vous pourrez observer un poisson derriere un graph de Vincent Glowinski"
+        },
+        {
+          "address": "Rue Terre-Neuve",
+          "name": "GLEO",
+          "comment": "Street art style colombien très hypnotisant"
+        }
+      ]
+    },
+    {
+      "name": "Une promenade haute en couleurs, partie II",
+      "description": "Une sélection de graffitis à Bruxelles",
+      "theme_id"  : "street-art",
+      "link"      : "https://www.google.be/maps/dir/50.841594,4.3479004/50.8432419,4.3480825/50.844267,4.3436369/@50.8430219,4.3456476,17.75z/data=!4m2!4m1!3e2",
+      "steps": [
+        {
+          "address": "Rue des Ursulines",
+          "name": "Multiple artists",
+          "comment": "Plusieurs artistes se sont relayées pour égayer l'endroit"
+        },
+        {
+          "address": "Rue Philippe de Champagne",
+          "name": "ABOVE",
+          "comment": "Magnifique facade"
+        },
+        {
+          "address": "Rue de la Verdure 13",
+          "name": "DEFO 84 & SHAKE",
+          "comment": "Superbe graph !"
         }
       ]
     }
