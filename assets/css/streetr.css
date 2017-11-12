@@ -232,6 +232,10 @@ blockquote{
   width: 100%;
 }
 
+.bold{
+  font-weight: 500;
+}
+
 .image-overlay-intro{
   height: auto;
   background-color: rgba(34, 59, 78,0.86);
