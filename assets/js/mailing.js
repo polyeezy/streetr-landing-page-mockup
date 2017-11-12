@@ -9,10 +9,13 @@ function sendPath(){
         "link" : currentLink
     };
 
+    var host = window.location.hostname;
+
+
 
     $.ajax({
         type: "POST",
-        url: "http://www.streetr.eu/sendPathByMail.php",
+        url: host + '/sendPathByMail.php',
         data: data,
         dataType: 'json',
         crossDomain: true,
@@ -37,7 +40,6 @@ function path_send_success(data){
 }
 function path_send_error(data){
     //data = JSON.parse(data);
-    console.log(data);
 
     Materialize.toast(data.message);
     $('.progress').remove();

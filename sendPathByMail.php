@@ -1,9 +1,10 @@
 <?php
-header('Content-Type: application/json');
 
 $invalid_mail = '{"success": false, "message" : "Email invalide."}';
 $invalid_link = '{"success": true, "message" : "Erreur. Veuillez réessayer."}';
 $mail = "";
+
+
 
 if (!isset($_POST['mail']) || ( isset($_POST['mail']) && empty($_POST['mail']) ) ) {
 
@@ -11,8 +12,9 @@ if (!isset($_POST['mail']) || ( isset($_POST['mail']) && empty($_POST['mail']) )
     $res->status = 403;
     $res->success= false;
     $res->message = "Email invalide.";
+    header('Content-Type: application/json');
 
-    echo json_encode($res);
+    print_r(json_encode($res));
     return;
 }
 
@@ -50,6 +52,7 @@ $res->status = 200;
 $res->success= true;
 $res->message = "Trajet envoyé";
 $res->link = $link;
+header('Content-Type: application/json');
 
 echo json_encode($res);
 return;?>
