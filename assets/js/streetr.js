@@ -94,7 +94,10 @@ function update_sliders(id){
                         '    <img src="'+getPathPreview(id)+'"> <!-- random image -->'+
                         '    <div class="caption center-align card">'+
                         '        <h3 class="black-text">À vous de jouer!</h3>'+
-                        '    <p>                   <button onclick="sendPath()" id="btn_send_path" class="waves-effect waves-light red btn"><i class="material-icons right">send</i>Envoyer</button> </p>'+
+                        '    <p>                   <a href="#modal1" class="waves-effect waves-light red btn-large modal-trigger">\n' +
+                        '                <i class="material-icons right ">send</i>\n' +
+                        '                Recupérer ce parcours\n' +
+                        '            </a> </p>'+
                         '    </div>'+
                         '    </li>    </ul>\n' +
                         '        </div>';
