@@ -8,6 +8,10 @@
   color: #15609B;
 }
 
+.hidden{
+  visibility: hidden !important;
+}
+
 .streetr-main-btn{
   background: #77bef5;
   color: #0367b4;
