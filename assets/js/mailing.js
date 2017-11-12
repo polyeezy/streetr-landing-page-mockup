@@ -20,7 +20,7 @@ function sendPath(){
 }
 
 function path_send_success(data){
-    data = JSON.parse(data);
+  //  data = JSON.parse(data);
     var color = data.success ? "green" : "red";
     Materialize.toast(data.message, 4000,  color);
     if (data.success){
