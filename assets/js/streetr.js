@@ -15,11 +15,12 @@ function getPathData(path_id) {
 }
 
 function getPathScreenshots(path_id){
-    return {
-        'screenshot1' : getPathDirectory(path_id) + '/screenshot1.jpg',
-        'screenshot2' : getPathDirectory(path_id) + '/screenshot2.jpg',
-        'screenshot3' : getPathDirectory(path_id) + '/screenshot3.jpg'
-    }
+    return[
+        getPathDirectory(path_id) + '/screenshot1.jpg',
+        getPathDirectory(path_id) + '/screenshot2.jpg',
+        getPathDirectory(path_id) + '/screenshot3.jpg'
+    ]
+
 }
 
 function getPathPreview(path_id){
@@ -70,9 +71,9 @@ function update_sliders(id){
                         '            <ul class="slides">';
 
 
-                    elem.steps.forEach(function (step){
+                    elem.steps.forEach(function (step, idx){
                         myvar +=  '<li class="streetr-slide">'+
-                            '    <img src="'+ screens.screenshot1+'"> <!-- random image -->'+
+                            '    <img src="'+ screens[idx]+'"> <!-- random image -->'+
                             '    <div class="caption center-align card">'+
                             '        <h3 class="black-text">'+step.name+'</h3>'+
                             '    </div>'+
