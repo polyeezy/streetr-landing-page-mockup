@@ -17,7 +17,7 @@ function sendPath(){
         type: "POST",
         url: 'sendPathByMail.php',
         data: data,
-        dataType: 'json',
+        dataType:'JSON',
         crossDomain: true,
         success: path_send_success,
         error : path_send_error
