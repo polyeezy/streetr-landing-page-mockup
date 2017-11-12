@@ -9,9 +9,9 @@ function sendPath(){
         "link" : currentLink
     };
 
-    var host = window.location.hostname;
 
-
+    var host = "http://www.streetr.eu";
+    //var host = "http://www.streetr.eu";
 
     $.ajax({
         type: "POST",
