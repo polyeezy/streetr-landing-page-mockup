@@ -79,7 +79,7 @@
 
 <div class="section no-pad-bot">
     <div class="container">
-        <div class="row">
+        <div class="row theme_container">
             <ul id="themes_list" class="collapsible" data-collapsible="accordion">
                 <!-- Themes list -->
                 <li>
@@ -96,42 +96,6 @@
                     </div>
                 </li>
                 <!-- End of theme list -->
-            </ul>
-        </div>
-
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <img src="assets/Paths/street-art/street-art_1/screenshot1.jpg"> <!-- random image -->
-                    <div class="caption center-align card">
-                        <h3 class="black-text">Illustration vieil homme sur facade</h3>
-                        <h5 class="light blue-text white">On remarque sur la facade d'un mur à gauche le portrait d'un vieil homme.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/Paths/street-art/street-art_1/screenshot2.jpg"> <!-- random image -->
-                    <div class="caption center-align card">
-                        <h3 class="black-text">illustration oiseau facade</h3>
-                        <h5 class="light blue-text white">Si vous êtes placé vers le parking de taxis, en faisant face au rond point, vous remarquerez l'illustration d'un oiseau sur la facade en fond.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/Paths/street-art/street-art_1/screenshot3.jpg"> <!-- random image -->
-                    <div class="caption center-align card">
-                        <h3 class="black-text">Free wall</h3>
-                        <h5 class="light blue-text white">Aprés avoir déscendu la première session d'escaliers, sur votre gauche, sous l'arc, se trouve un mur dédié au graffiti.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/Paths/street-art/street-art_1/preview.png"> <!-- random image -->
-                    <div class="caption center-align card">
-                        <h3 class="black-text">À vous de jouer!</h3>
-                 <p>       <a class="waves-effect waves-light blue btn-large">
-                     <i class="material-icons right">send</i>
-                     Envoyer ce trajet sur mon téléphone
-                 </a></p>
-                    </div>
-                </li>
             </ul>
         </div>
 
@@ -252,6 +216,12 @@
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+
+<script type="text/javascript" src="assets/js/mailing.js"></script>
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+
 <script type="text/javascript" src="assets/js/streetr.js"></script>
 
 <script>  var currentPath = {};
@@ -259,19 +229,15 @@
 $.getJSON(getPathData('1'), function( data ) {
     currentPath = data;
 });</script>
-
-
-<script type="text/javascript" src="assets/js/mailing.js"></script>
-
-
-<script type="text/javascript" src="assets/js/materialize.min.js"></script>
-
 <script>
 
     $(document).ready(function(){
-        $('.slider').slider();
         $('.modal').modal();
 
+        $("#1").click(function() {
+            e.preventDefault();
+            alert( "Handler for .click() called." );
+        });
 
     });
 </script>

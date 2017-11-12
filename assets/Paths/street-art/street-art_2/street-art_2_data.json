@@ -1,0 +1,23 @@
+{
+  "name": "Une promenade en dessins",
+  "description": "Une sélection de graffitis à Bruxelles",
+  "theme_id"  : "street-art",
+  "link"      : "gmail_link",
+  "steps": [
+    {
+      "address": "14 Rue de Namur, Bruxelles",
+      "name": "illustration vieil homme sur facade",
+      "comment": "Une centaine de metres aprés sur la gauche, on remarque sur la facade d'un mur le portrait d'un vieil homme."
+    },
+    {
+      "address": "Mont des arts, Bruxelles",
+      "name": "Free wall",
+      "comment": "Aprés avoir déscendu la première session d'escaliers, sur votre gauche, sous l'arc, se trouve un mur dédié au graffiti."
+    },
+    {
+      "address": "Chaussée d'ixelles, Bruxelles",
+      "name": "illustration oiseau facade",
+      "comment": "Si vous êtes placé vers le parking de taxis, en faisant face au rond point, vous remarquerez l'illustration d'un oiseau sur la facade en fond."
+    }
+  ]
+}
