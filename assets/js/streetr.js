@@ -20,7 +20,13 @@ function getPathScreenshots(path_id){
         getPathDirectory(path_id) + '/screenshot2.jpg',
         getPathDirectory(path_id) + '/screenshot3.jpg'
     ]
+}
 
+function getPathLink(){
+    return[
+        'https://goo.gl/3AHCwq',
+        'https://goo.gl/dAK5ad'
+    ]
 }
 
 function getPathPreview(path_id){

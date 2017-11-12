@@ -6,7 +6,7 @@ function sendPath(){
 
     var data = {
         "mail" : email,
-        "link" : "test"
+        "link" : currentLink
     };
 
 
@@ -23,12 +23,15 @@ function path_send_success(data){
     data = JSON.parse(data);
     var color = data.success ? "green" : "red";
     Materialize.toast(data.message, 4000,  color);
-    $('.modal-content').empty();
-    $('.modal-content').append('<h4>Merci d\'utiliser Streetr !</h4>\n' +
-        '        <p>Vous pouvez maintenant accéder au parcours : <a target="_blank" href="'+data.link+'">Lien du parcours</a>' +
-        '       </p>');
+    if (data.success){
+        $('.modal-content').empty();
+        $('.modal-content').append('<h4>Merci d\'utiliser Streetr !</h4>\n' +
+            '        <p>Vous pouvez maintenant accéder au parcours : <a target="_blank" href="'+data.link+'">Lien du parcours</a>' +
+            '       </p>');
 
-    $('.modal-send').append('<a href="test">test</a>');
+        $('.modal-send').append('<a href="test">test</a>');
+    }
+
     $('.progress').remove();
 }
 function path_send_error(data){

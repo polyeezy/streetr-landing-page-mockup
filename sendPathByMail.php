@@ -10,7 +10,7 @@ if (!isset($_POST['mail']) || ( isset($_POST['mail']) && empty($_POST['mail']) )
     return;
 }
 
-$link = "test";
+$link = $_POST['link'];
 
 $success = '{"success": true, "message" : "Trajet envoyé!", "link": "'.$link.'"}';
 
