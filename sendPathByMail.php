@@ -1,20 +1,13 @@
+<?php header('Content-Type: application/json'); ?>
 <?php
 
 $invalid_mail = '{"success": false, "message" : "Email invalide."}';
 $invalid_link = '{"success": true, "message" : "Erreur. Veuillez réessayer."}';
 $mail = "";
 
-
-
 if (!isset($_POST['mail']) || ( isset($_POST['mail']) && empty($_POST['mail']) ) ) {
 
-    $res = new stdClass();
-    $res->status = 403;
-    $res->success= false;
-    $res->message = "Email invalide.";
-    header('Content-Type: application/json');
-
-    print_r(json_encode($res));
+    echo json_encode(array("status"=>403, "success"=>false, "message"=>"Email invalide."));
     return;
 }
 
@@ -46,13 +39,7 @@ $response = curl_exec($curl);
 $err = curl_error($curl);
 
 curl_close($curl);
+echo json_encode(array("status"=>200, "success"=>true, "message"=>"Trajet envoyé", "link"=>$link));
 
-$res = new stdClass();
-$res->status = 200;
-$res->success= true;
-$res->message = "Trajet envoyé";
-$res->link = $link;
-header('Content-Type: application/json');
-
-echo json_encode($res);
-return;?>
+return;
+?>
