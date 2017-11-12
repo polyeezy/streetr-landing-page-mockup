@@ -12,15 +12,16 @@ function sendPath(){
 
     $.ajax({
         type: "POST",
-        url: "sendPathByMail.php",
+        url: "http://www.streetr.eu/sendPathByMail.php",
         data: data,
+        dataType: 'json',
+        crossDomain: true,
         success: path_send_success,
         error : path_send_error
     });
 }
 
 function path_send_success(data){
-  //  data = JSON.parse(data);
     var color = data.success ? "green" : "red";
     Materialize.toast(data.message, 4000,  color);
     if (data.success){
@@ -35,7 +36,8 @@ function path_send_success(data){
     $('.progress').remove();
 }
 function path_send_error(data){
-    data = JSON.parse(data);
+    //data = JSON.parse(data);
+    console.log(data);
 
     Materialize.toast(data.message);
     $('.progress').remove();

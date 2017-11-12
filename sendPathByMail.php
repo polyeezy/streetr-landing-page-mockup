@@ -7,7 +7,12 @@ $mail = "";
 
 if (!isset($_POST['mail']) || ( isset($_POST['mail']) && empty($_POST['mail']) ) ) {
 
-    echo json_encode($invalid_mail);
+    $res = new stdClass();
+    $res->status = 403;
+    $res->success= false;
+    $res->message = "Email invalide.";
+
+    echo json_encode($res);
     return;
 }
 
@@ -40,5 +45,11 @@ $err = curl_error($curl);
 
 curl_close($curl);
 
-echo json_encode($invalid_mail);return;
-?>
+$res = new stdClass();
+$res->status = 200;
+$res->success= true;
+$res->message = "Trajet envoyé";
+$res->link = $link;
+
+echo json_encode($res);
+return;?>
