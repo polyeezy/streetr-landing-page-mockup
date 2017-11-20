@@ -8,7 +8,8 @@ function sendPath(){
 
     var data = {
         "mail" : email,
-        "link" : getPathLink()[currentIdx]
+        "link" : getPathLink()[currentIdx],
+        "id" : currentIdx
     };
 
 
@@ -29,14 +30,23 @@ function sendPath(){
 function path_send_success(data){
     var color = data.success ? "green" : "red";
     Materialize.toast(data.message, 4000,  color);
-    if (data.success){
-        $('.modal-content').empty();
-        $('.modal-content').append('<h4>Merci d\'utiliser Streetr !</h4>\n' +
-            '        <p>Vous pouvez maintenant accéder au parcours : <a target="_blank" href="'+data.link+'">Lien du parcours</a>' +
-            '       </p>');
 
-        $('.modal-send').append('<a href="test">test</a>');
-    }
+
+
+    if (data.success){
+        document.location.href="trajet-" + (parseInt(data.id) + 1) + ".html";
+        /*
+             console.log(data);
+             $('.modal-content').empty();
+             $('.modal-content').append('<h4>Merci d\'utiliser Streetr !</h4>\n' +
+                 '        <p>Vous pouvez maintenant accéder au parcours : <a target="_blank" href="'+data.link+'">Lien du parcours</a>' +
+                 '       </p>');
+
+             $('.modal-send').append('<a href="test">test</a>');
+                */
+         }
+
+
 
     $('.progress').remove();
 }

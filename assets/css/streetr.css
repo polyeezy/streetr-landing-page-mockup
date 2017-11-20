@@ -178,6 +178,17 @@ blockquote{
   opacity: 0;
 }
 
+.thank-you-title{
+    margin-top: 0 !important;
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
 .iphones .iphone-right{
   width: 310px;
   z-index: 1;
