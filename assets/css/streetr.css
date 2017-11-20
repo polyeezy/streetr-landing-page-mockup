@@ -276,6 +276,10 @@ blockquote{
   color: white;
 }
 
+
 #sidenav-overlay {
     z-index: 1;
+}
+.social-footer{
+  padding-right: 0px;
 }
