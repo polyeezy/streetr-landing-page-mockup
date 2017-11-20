@@ -4,6 +4,12 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+.getBtn{
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+}
+
 .color_pallette{
   color: #2196F3;
   color: #5DA1D6;

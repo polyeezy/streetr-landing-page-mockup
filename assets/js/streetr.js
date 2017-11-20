@@ -45,7 +45,10 @@ function createPath(path_id, active) {
                 var path = index == 1 ? '<a onclick="active_path('+index+')" id="' + index + '" href="#!" class="path collection-item avatar active">' : '<a onclick="active_path('+index+')" id="' + (index) + '" href="#!" class="path collection-item avatar">';
                 path += '<span class="title bold">' + elem.name + '</span>';
                 path += '<p class="body">' + elem.description + '</p>';
+                path += '<button onclick="active_path(\'+index+\')" href="#modal1" class="getBtn hide-on-small-only btn modal-trigger" class="btn">Obtenir</button>';
+
                 path += '</a>';
+
                 $('.' + THEME_ID).append(path);
             });
         })
