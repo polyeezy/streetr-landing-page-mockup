@@ -11,6 +11,8 @@ if (!isset($_POST['mail']) || ( isset($_POST['mail']) && empty($_POST['mail']) )
     return;
 }
 
+$id = $_POST['id'];
+
 $link = $_POST['link'];
 
 $success = '{"success": true, "message" : "Trajet envoyé!", "link": "'.$link.'"}';
@@ -40,7 +42,7 @@ $err = curl_error($curl);
 
 curl_close($curl);
 
-echo json_encode(array("status"=>200, "success"=>true, "message"=>"Trajet envoyé", "link"=>$link));
+echo json_encode(array("status"=>200, "success"=>true, "message"=>"Trajet envoyé", "link"=>$link, "id" => $id));
 
 return;
 ?>

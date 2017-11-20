@@ -28,7 +28,6 @@ function getPathLink(){
         'https://goo.gl/dAK5ad',
         'https://goo.gl/Z2RcRJ',
         'https://goo.gl/yNhNJt'
-
     ]
 }
 
