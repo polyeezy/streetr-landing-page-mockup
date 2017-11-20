@@ -30,12 +30,12 @@
 <body>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
+
 <!-- Google Tag Manager (noscript) -->
 <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML55BQH"
-height="0" width="0" style="display:none;visibility:hidden">
-</iframe>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML55BQH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
+
 <!-- End Google Tag Manager (noscript) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109542380-1"></script>
 <script>
@@ -45,6 +45,7 @@ height="0" width="0" style="display:none;visibility:hidden">
 
     gtag('config', 'UA-109542380-1');
 </script>
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -53,7 +54,43 @@ height="0" width="0" style="display:none;visibility:hidden">
     js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1274021689383443';
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="section no-pad-bot blue intro">
+
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#intro" class="brand-logo">Streetr</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="#utiliser-streetr" class="waves-effect waves-light btn white blue-text scrollspy">Utiliser Streetr</a></li>
+                <li><a href="#explorer">Explorer</a></li>
+                <li><a href="#trouver">Trouver</a></li>
+                <li><a href="#creer">Créer</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><div class="user-view">
+                    <div class="background">
+                        <img src="assets/img/thumbnail.png">
+                    </div>
+                    <a href="#!user"><img class="circle" src="assets/img/logo-streetr.jpg"></a>
+                    <a href="#!name"><span class="white-text name">Streetr</span></a>
+                    <a href="mailto:app.streetr.eu@gmail.com"><span class="white-text email">app.streetr.eu@gmail.com</span></a>
+                </div></li>
+                <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="#utiliser-streetr" class="waves-effect waves-light btn white blue-text scrollspy">Utiliser Streetr</a></li>
+                <li><a href="#explorer">Explorer</a></li>
+                <li><a href="#trouver">Trouver</a></li>
+                <li><a href="#creer">Créer</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="blue-text" target="_blank" href="https://www.facebook.com/AppStreetr/">Facebook</a></li>
+                <li><a class="blue-text" target="_blank" href="https://twitter.com/Streetr_eu">Twitter</a></li>
+                <li><a class="blue-text" target="_blank" href="https://www.instagram.com/streetr.eu/">Instagram</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div id="intro" class="section no-pad-bot blue intro">
     <div class="image-overlay-intro">
         <div class="container">
             <div class="full-page-120">
@@ -70,7 +107,7 @@ height="0" width="0" style="display:none;visibility:hidden">
     </div>
 </div>
 
-<div class="section grey lighten-5">
+<div id="a-propos" class="section grey lighten-5">
     <div class="row">
         <div class="col s8 offset-s2">
             <div class="showcase">
@@ -86,16 +123,13 @@ height="0" width="0" style="display:none;visibility:hidden">
                     <p class="bold">
                         "D'autres photographes seraient intéressés par ce parcours"
                     </p>
-
-
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
-<div class="section no-pad-bot">
+<div id="utiliser-streetr" class="section no-pad-bot">
     <div class="container">
         <div class="row theme_container">
             <ul id="themes_list" class="collapsible" data-collapsible="accordion">
@@ -126,7 +160,7 @@ height="0" width="0" style="display:none;visibility:hidden">
     </div>
 </div>
 
-<div class="section values grey lighten-5">
+<div id="explorer" class="section values grey lighten-5">
     <div class="row">
         <div class="col s12 m12 l6 value-container">
             <div class="showcase">
@@ -145,7 +179,7 @@ height="0" width="0" style="display:none;visibility:hidden">
     </div>
 </div>
 
-<div class="section values">
+<div id="trouver" class="section values">
     <div class="row">
         <div class="iphone-section-container col s12 m12 l6 valign-wrapper hide-on-med-and-down">
             <img src="assets/img/Streetr%20-%20Mockup%20-%20Trouver.png" class=" iphone-section-1" alt="">
@@ -165,7 +199,7 @@ height="0" width="0" style="display:none;visibility:hidden">
     </div>
 </div>
 
-<div class="section values grey lighten-5">
+<div id="creer" class="section values grey lighten-5">
     <div class="row">
         <div class="col s12 m12 l6 value-container">
             <div class="showcase">
@@ -240,9 +274,6 @@ height="0" width="0" style="display:none;visibility:hidden">
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-
-
 <script type="text/javascript" src="assets/js/materialize.min.js"></script>
 <script type="text/javascript" src="assets/js/streetr.js"></script>
 <script type="text/javascript" src="assets/js/mailing.js"></script>
@@ -256,13 +287,15 @@ $.getJSON(getPathData('1'), function( data ) {
 <script>
 
     $(document).ready(function(){
+
+
+        $(".button-collapse").sideNav();
         $('.modal').modal();
+        $('.scrollspy').scrollSpy();
 
-        $("#1").click(function() {
-            e.preventDefault();
-            alert( "Handler for .click() called." );
+        $('.side-nav li a').click(function(){
+            $('.button-collapse').sideNav('hide');
         });
-
     });
 </script>
 
