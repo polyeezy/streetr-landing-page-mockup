@@ -241,6 +241,15 @@ blockquote{
   background-color: rgba(34, 59, 78,0.86);
 }
 
+.brand-logo{
+  padding-left: 20px !important;
+    font-family: Bitter;
+}
+
+.header{
+    font-family: Bitter;
+
+}
 
 .image-overlay{
   height: auto;
@@ -265,4 +274,8 @@ blockquote{
 
 #download input{
   color: white;
+}
+
+#sidenav-overlay {
+    z-index: 1;
 }
