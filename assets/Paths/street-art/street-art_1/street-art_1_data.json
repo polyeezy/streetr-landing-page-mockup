@@ -8,46 +8,46 @@
       "steps": [
         {
           "address": "14 Rue de Namur, Bruxelles",
-          "name": "illustration vieil homme sur facade",
-          "comment": "Une centaine de metres aprés sur la gauche, on remarque sur la facade d'un mur le portrait d'un vieil homme."
+          "name": "Illustration vieil homme sur façade",
+          "comment": "Une centaine de mètres après sur la gauche, on remarque sur la façade d'un mur le portrait d'un vieil homme."
         },
         {
           "address": "Chaussée d'ixelles, Bruxelles",
-          "name": "illustration oiseau facade",
-          "comment": "Si vous êtes placé vers le parking de taxis, en faisant face au rond point, vous remarquerez l'illustration d'un oiseau sur la facade en fond."
+          "name": "Illustration oiseau façade",
+          "comment": "Si vous êtes placés vers le parking de taxis, en faisant face au rond-point, vous remarquerez l'illustration d'un oiseau sur la façade en fond."
         },
         {
           "address": "Mont des arts, Bruxelles",
           "name": "Free wall",
-          "comment": "Aprés avoir déscendu la première session d'escaliers, sur votre gauche, sous l'arc, se trouve un mur dédié au graffiti."
+          "comment": "Après avoir descendu la première session d'escaliers, sur votre gauche, sous l'arc, se trouve un mur dédié au graffiti."
         }
       ]
     },
     {
-      "name": "Découvrir la materinité",
-      "description": "Une rue illustrée dans le theme de la maternité",
+      "name": "La maternité au travers du street art",
+      "description": "Découvrez la maternité au travers du street art à bruxelles.",
       "theme_id"  : "street-art",
       "link"      : "gmail_link",
       "steps": [
         {
           "address": "Avenue Rogier 263, Bruxelles",
           "name": "NEAN : Brussels ",
-          "comment": ""
+          "comment": "Influencé par la peinture traditionnelle et l’art numérique, Nean gravite entre un style expérimental et photoréaliste. Curieux de tout, il multiplie les essais sur des supports de grande taille, alternant peinture numérique, peinture sur mur et peinture sur toile."
         },
         {
           "address": "164 chausse de Haecht, Bruxelles",
           "name": "Institut Sainte-Marie La Sagesse",
-          "comment": ""
+          "comment": "A gauche dans la cours avant de l’Institut Sainte-Marie La Sagesse, découvrez une oeuvre anonyme sur votre trajet. Une petite fille tenant un ballon en forme de cœur sous un décors d’arabesques, de motifs à couleur…"
         },
         {
           "address": "Boulevard Simon Bolivar, Bruxelles",
           "name": "SAINER, La maternité",
-          "comment": ""
+          "comment": "Sainer, artiste originaire de Lodz en Pologne, issu du célèbre collectif ETAM CRU, a réalisé à Bruxelles cette œuvre originale dans le style unique et lumineux qui fait sa réputation. Pour réaliser cette fresque, Sainer a travaillé pendant une dizaine de jours et utilisé près de 150 litres de peinture."
         }
       ]
     },
     {
-      "name": "Une promenade haute en couleurs",
+      "name": "Une promenade haute en couleur",
       "description": "Une sélection de graffitis à Bruxelles",
       "theme_id"  : "street-art",
       "link"      : "https://www.google.be/maps/dir/50.8373102,4.3455618/50.8391531,4.3488449/50.8419851,4.3481153/@50.8401795,4.3470424,17z/data=!4m2!4m1!3e2",
@@ -55,12 +55,12 @@
         {
           "address": "Place du Jeu de Balle 15",
           "name": "Mr Chat",
-          "comment": "Un joli chat vous sourit sur la facade du magasin devant vous !"
+          "comment": "Un joli chat vous sourit sur la façade du magasin devant vous !"
         },
         {
           "address": "Rue Blaes 87",
           "name": "BONOM",
-          "comment": "Vous pourrez observer un poisson derriere un graph de Vincent Glowinski"
+          "comment": "Vous pourrez observer un poisson derriere une oeuvre de Vincent Glowinski"
         },
         {
           "address": "Rue Terre-Neuve",
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "name": "Une promenade haute en couleurs, partie II",
+      "name": "Une promenade haute en couleur, partie II",
       "description": "Une sélection de graffitis à Bruxelles",
       "theme_id"  : "street-art",
       "link"      : "https://www.google.be/maps/dir/50.841594,4.3479004/50.8432419,4.3480825/50.844267,4.3436369/@50.8430219,4.3456476,17.75z/data=!4m2!4m1!3e2",
@@ -83,7 +83,7 @@
         {
           "address": "Rue Philippe de Champagne",
           "name": "ABOVE",
-          "comment": "Magnifique facade"
+          "comment": "Magnifique façade"
         },
         {
           "address": "Rue de la Verdure 13",
