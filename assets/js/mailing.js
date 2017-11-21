@@ -1,9 +1,5 @@
 function sendPath(){
     $('.modal-send').append('<div class="progress"><div class="indeterminate"></div></div>');
-
-
-    console.log(currentIdx);
-
     var email = $('#email').val();
 
     var data = {
@@ -52,7 +48,6 @@ function path_send_success(data){
 }
 function path_send_error(data){
     //data = JSON.parse(data);
-    console.log(data);
     Materialize.toast(data.message);
     $('.progress').remove();
 }
