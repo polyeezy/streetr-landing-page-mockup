@@ -98,7 +98,7 @@ function update_sliders(id){
                         '        <h3 class="black-text">À vous de jouer!</h3>'+
                         '    <p>                   <a href="#modal1" class="waves-effect waves-light red btn-large modal-trigger">\n' +
                         '                <i class="material-icons right ">send</i>\n' +
-                        '                Recupérer ce parcours\n' +
+                        '                Récupérer ce parcours\n' +
                         '            </a> </p>'+
                         '    </div>'+
                         '    </li>    </ul>\n' +
