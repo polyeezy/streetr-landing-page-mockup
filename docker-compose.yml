@@ -1,11 +1,12 @@
 version: "2"
 services:
     www:
-        image:
-          php:7.1.2-apache
+        build:
+          ./
         ports:
             - "8001:80"
         volumes:
             - ./:/var/www/html/
+            - ./conf/apache.conf:/etc/apache2/sites-enabled/000-default.conf
 volumes:
     persistent:
